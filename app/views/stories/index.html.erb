@@ -4,6 +4,6 @@
 <div class="col-sm-12 story-list">
   <h4>Explore stories</h4>
   <% @stories.each do |story| %>
-    <li><%= story.title %> <span class="pipe">|</span> <%= story.creator %> <span class="pipe">|</span> <%= time_ago_in_words(story.created_at) %> ago</li>
+    <li><%= link_to story.title, story_path(story) %> <span class="pipe">|</span> <%= story.creator %> <span class="pipe">|</span> <%= time_ago_in_words(story.created_at) %> ago</li>
   <% end %>
 </div>
