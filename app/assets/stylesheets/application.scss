@@ -1,2 +1,64 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$nav-color: #E05A61;
+$ivory: #FFFffB;
+$body-color: #3A6B6F;
+
+body {
+  background-color: $ivory;
+}
+.container {
+  margin-top: 0;
+}
+img {
+  width: 100%;
+  border: none;
+  margin-top: 0;
+}
+
+.story-list {
+  margin-top: 3em;
+  color: $body-color;
+}
+
+.hero-unit {
+  background-color:white;
+  background-size:cover;
+  background-image: image-url("18.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 345px;
+  margin-top: 0;
+  h1 {
+    margin-top: 0;
+    color: $nav-color;
+    opacity: .9;
+    font-size: 3em;
+    padding-top: 120px;
+    text-align: left;
+    margin-left: 2em;
+    font-family: "spumante",sans-serif;
+  }
+}
+
+nav#navbar {
+  background-color: $nav-color;
+  border-radius: 0;
+  a {
+    color: $ivory;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+  .navbar-brand {
+    font-weight: bold;
+    font-family: "spumante",sans-serif;
+    font-size: 2em;
+  }
+  .navbar  {
+    .navbar-default {
+      margin-bottom: 0px;
+    }
+  }
+}

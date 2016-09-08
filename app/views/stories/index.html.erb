@@ -1,0 +1,9 @@
+<div class="hero-unit banner-img">
+  <h1>Storytime</h1>
+</div>
+<div class="col-sm-12 story-list">
+  <h4>Explore stories</h4>
+  <% @stories.each do |story| %>
+    <li><%= story.title %> <span class="pipe">|</span> <%= story.creator %> <span class="pipe">|</span> <%= time_ago_in_words(story.created_at) %> ago</li>
+  <% end %>
+</div>
