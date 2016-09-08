@@ -4,7 +4,7 @@ Rails.application.routes.draw do
    resources :components
   end
 
-  resources :images do
-    resources :components
+  resources :stories do
+    resources :images
   end
 end
