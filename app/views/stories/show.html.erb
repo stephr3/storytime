@@ -1,14 +1,14 @@
-<h1><%= @story.title %></h1>
+<h1 class="story-styling"><%= @story.title %></h1>
 
 <% if @story.components.any? %>
   <% @story.components.each do |component| %>
     <div class="row">
       <div class="col-sm-5">
-        <%= image_tag "#{component.image.number}.jpg"%>
+        <%= image_tag("#{component.image.number}.jpg", :class => "story-book-image")%>
       </div>
       <div class="col-sm-5 story-book">
-        <h4><%= component.text %></h4>
-        <p><%= component.user %></p>
+        <h4 class="story-styling"><%= component.text %></h4>
+        <p><em><%= component.user %></em></p>
       </div>
     </div>
   <% end %>
@@ -17,5 +17,5 @@
 <% if @story.components.length < 10 %>
   <%= link_to "Add to this story", story_image_path(@story, @image), class: "btn btn-default" %>
 <% else %>
-  <h3>The End</h3>
+  <h3 class="story-styling" style="text-align, center">The End</h3>
 <% end %>

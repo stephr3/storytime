@@ -11,14 +11,24 @@ body {
 .container {
   margin-top: 0;
 }
+
 img {
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: auto;
   border: none;
   margin-top: 0;
 }
 
 .col-sm-3 {
-  height: 250px;
+  height: 275px;
+  .image-index {
+    width: 90%;
+  }
+}
+
+.story-book-image {
+  width: 100%;
 }
 
 .pipe {
@@ -48,6 +58,10 @@ img {
     margin-left: 2em;
     font-family: "spumante",sans-serif;
   }
+}
+
+.story-styling {
+  font-family: "mrs-eaves",sans-serif;
 }
 
 nav#navbar {
